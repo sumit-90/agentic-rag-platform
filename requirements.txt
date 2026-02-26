@@ -1,0 +1,89 @@
+# ============================================================
+# Web Framework
+# ============================================================
+fastapi>=0.128.0                    # FastAPI framework + CORSMiddleware
+uvicorn[standard]>=0.40.0           # ASGI server with extras (websockets, watchfiles)
+httpx>=0.27.0                       # Async HTTP client (for internal service calls)
+
+# ============================================================
+# Data Validation & Config
+# ============================================================
+pydantic>=2.12.5                    # Request/response schema models
+pydantic-settings>=2.2.0            # BaseSettings — env var config management
+python-dotenv>=1.2.1                # .env secrets injection
+pyyaml>=6.0.3                       # YAML config support (optional config files)
+
+# ============================================================
+# LangChain Ecosystem
+# ============================================================
+langchain>=0.1.0                    # Core LangChain framework
+langchain-core>=1.2.7               # SystemMessage, HumanMessage, base abstractions
+langchain-community>=0.4.1          # TextLoader, UnstructuredMarkdownLoader, PyMuPDFLoader
+langchain-openai>=1.1.7             # OpenAIEmbeddings, ChatOpenAI
+langchain-text-splitters>=1.1.0     # RecursiveCharacterTextSplitter, CharacterTextSplitter
+
+# ============================================================
+# LLM Providers
+# ============================================================
+openai>=2.15.0                      # Underlying OpenAI client (used by langchain-openai)
+cohere>=5.20.1                      # Cohere rerank API (used directly, not via LangChain)
+
+# ============================================================
+# Embeddings
+# ============================================================
+sentence-transformers>=2.5.0        # HuggingFace local embedding models (hf_embedder.py)
+
+# ============================================================
+# Vector Store
+# ============================================================
+pinecone-client>=3.0.0              # Pinecone vector store (pinecone_store.py)
+qdrant-client>=1.16.2               # Qdrant vector store (qdrant_store.py)
+
+# ============================================================
+# Document Parsing
+# ============================================================
+pymupdf>=1.26.7                     # PDF parsing (PyMuPDFLoader — faster than pypdf)
+python-docx>=1.1.0                  # DOCX parsing (docx_parser.py)
+beautifulsoup4>=4.12.0              # HTML parsing (html_parser.py)
+lxml>=5.1.0                         # HTML/XML parser backend for BeautifulSoup
+unstructured>=0.18.15               # Markdown + unstructured doc loading
+
+# ============================================================
+# Hybrid Search (Sparse Retrieval)
+# ============================================================
+rank-bm25>=0.2.2                    # BM25 sparse retriever (sparse_retriever.py)
+
+# ============================================================
+# Caching
+# ============================================================
+redis>=5.0.0                        # Redis backend cache (redis_cache.py — production)
+cachetools>=5.3.0                   # In-memory LRU cache (in_memory_cache.py — dev)
+
+# ============================================================
+# Evaluation
+# ============================================================
+ragas>=0.3.7                        # Faithfulness, AnswerRelevancy, ContextPrecision metrics
+datasets>=2.17.0                    # HuggingFace datasets (used by RAGAS dataset builder)
+
+# ============================================================
+# UI
+# ============================================================
+streamlit>=1.31.0                   # Streamlit frontend (ui/streamlit_app.py)
+
+# ============================================================
+# Logging & Observability
+# ============================================================
+structlog>=24.1.0                   # Structured JSON logging (config/logging_config.py)
+
+# ============================================================
+# Resilience & Utilities
+# ============================================================
+tenacity>=8.2.0                     # Retry logic for LLM + API calls
+tqdm>=4.66.0                        # Progress bars for batch ingestion scripts
+
+# ============================================================
+# Testing
+# ============================================================
+pytest>=9.0.2                       # Unit + integration test runner
+pytest-asyncio>=0.23.0              # Async test support for FastAPI routes
+pytest-cov>=4.1.0                   # Test coverage reporting

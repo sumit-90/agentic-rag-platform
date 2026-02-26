@@ -1,0 +1,78 @@
+# Environment variables
+.env
+.env.*
+
+# add to .gitignore
+.deepeval/
+
+# Virtual environment (uv)
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Docker
+.dockerignore
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Vector store local data
+chroma_db/
+faiss_index/
+*.index
+
+# Model files
+*.bin
+*.pt
+*.onnx
+*.safetensors
+
+# Data files
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.pdf
+data/raw/
+data/processed/
+
+
+#claude
+claude_data/
+.claude_cache/
+.claude_config/
+.claude/
+
+#deepeval
+.deepeval/
+

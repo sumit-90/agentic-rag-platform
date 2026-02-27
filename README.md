@@ -190,12 +190,12 @@ python scripts/evaluate.py --dataset data/evaluation/testset.json
 
 ## Development Status
 
-| Component            | Status        |
-|----------------------|---------------|
+| Component            | Status         |
+|----------------------|----------------|
 | Project Scaffold     | ✅ Done        |
-| Config + Logging     | 🔲 In Progress |
+| Config + Logging     | ✅ Done        |
 | Ingestion Pipeline   | 🔲 Pending     |
-| Parsing Layer        | 🔲 Pending     |
+| Parsing Layer        | 🔲 In Progress |
 | Chunking Layer       | 🔲 Pending     |
 | Indexing Pipeline    | 🔲 Pending     |
 | Hybrid Retrieval     | 🔲 Pending     |

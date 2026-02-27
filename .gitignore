@@ -76,3 +76,8 @@ claude_data/
 #deepeval
 .deepeval/
 
+#serena
+.serena_cache/
+.serena_config/
+.serena/
+

@@ -195,8 +195,8 @@ python scripts/evaluate.py --dataset data/evaluation/testset.json
 | Project Scaffold     | ✅ Done        |
 | Config + Logging     | ✅ Done        |
 | Ingestion Pipeline   | 🔲 Pending     |
-| Parsing Layer        | 🔲 In Progress |
-| Chunking Layer       | 🔲 Pending     |
+| Parsing Layer        | ✅ Done        |
+| Chunking Layer       | 🔲 In Progress |
 | Indexing Pipeline    | 🔲 Pending     |
 | Hybrid Retrieval     | 🔲 Pending     |
 | Reranking            | 🔲 Pending     |

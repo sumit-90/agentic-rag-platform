@@ -306,8 +306,8 @@ python scripts/evaluate.py --dataset data/evaluation/testset.json
 | Chunking Layer         | ✅ Done         | Fixed + semantic chunkers + factory pattern      |
 | Embeddings Layer       | ✅ Done         | OpenAI + HuggingFace, batch optimized, retries   |
 | Cache Layer            | ✅ Done         | Redis + in-memory backends                       |
-| Vector Store Layer     | 🔲 In Progress  | Pinecone + Qdrant wrappers                       |
-| Ingestion Service      | 🔲 Pending      | Orchestrates parse → chunk → embed → index       |
+| Vector Store Layer     | ✅ Done         | Pinecone + Qdrant wrappers                       |
+| Ingestion Service      | 🔲 In Progress  | Orchestrates parse → chunk → embed → index       |
 | Hybrid Retrieval       | 🔲 Pending      | Dense + sparse + hybrid retriever                |
 | Reranking              | 🔲 Pending      | Cohere reranker integration                      |
 | Agent Layer            | 🔲 Pending      | RAG agent + tool calling + memory                |

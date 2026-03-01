@@ -61,6 +61,11 @@ class RetrievalSettings(BaseModel):
     score_threshold: float = Field(default=0.7, ge=0.0, le=1.0)
 
 
+class VectorStoreSettings(BaseModel):
+    provider: Literal["pinecone", "qdrant"] = "pinecone"
+    upsert_batch_size: int = Field(default=100, gt=0)
+
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -78,6 +83,7 @@ class Settings(BaseSettings):
     redis: RedisSettings = RedisSettings()
     chunking: ChunkingSettings = ChunkingSettings()
     retrieval: RetrievalSettings = RetrievalSettings()
+    vectorstore: VectorStoreSettings = VectorStoreSettings()
 
 
 settings = Settings()

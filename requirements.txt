@@ -21,6 +21,7 @@ langchain-core>=1.2.7               # SystemMessage, HumanMessage, base abstract
 langchain-community>=0.4.1          # TextLoader, UnstructuredMarkdownLoader, PyMuPDFLoader
 langchain-openai>=1.1.7             # OpenAIEmbeddings, ChatOpenAI
 langchain-text-splitters>=1.1.0     # RecursiveCharacterTextSplitter, CharacterTextSplitter
+langchain-experimental>=0.0.57      # Experimental features (e.g., hybrid search retriever)
 
 # ============================================================
 # LLM Providers

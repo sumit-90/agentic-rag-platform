@@ -19,6 +19,12 @@ class OpenAISettings(BaseModel):
     max_tokens: int = Field(default=2048, gt=0)
 
 
+class EmbeddingSettings(BaseModel):
+    provider: Literal["openai", "huggingface"] = "openai"
+    model_name: str = "text-embedding-3-small"
+    batch_size: int = Field(default=256, gt=0)
+
+
 class PineconeSettings(BaseModel):
     api_key: SecretStr
     index_name: str = "rag-index"
@@ -65,6 +71,7 @@ class Settings(BaseSettings):
 
     app: AppSettings = AppSettings()
     openai: OpenAISettings
+    embedding: EmbeddingSettings = EmbeddingSettings()
     pinecone: PineconeSettings
     cohere: CohereSettings
     qdrant: QdrantSettings = QdrantSettings()

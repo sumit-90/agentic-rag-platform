@@ -309,8 +309,8 @@ python scripts/evaluate.py --dataset data/evaluation/testset.json
 | Vector Store Layer     | ✅ Done         | Pinecone + Qdrant wrappers                       |
 | Ingestion Service      | ✅ Done         | Orchestrates parse → chunk → embed → index       |
 | Hybrid Retrieval       | ✅ Done         | Dense + sparse + hybrid retriever                |
-| Reranking              | 🔲 In Progress  | Cohere reranker integration                      |
-| Agent Layer            | 🔲 Pending      | RAG agent + tool calling + memory                |
+| Reranking              | ✅ Done         | Cohere reranker integration                      |
+| Agent Layer            | 🔲 In Progress  | RAG agent + tool calling + memory                |
 | Guardrails             | 🔲 Pending      | Input/output validation                          |
 | Evaluation (RAGAS)     | 🔲 Pending      | Faithfulness, relevancy, precision metrics       |
 | FastAPI Routes         | 🔲 Pending      | ingest, query, agent, health endpoints           |
